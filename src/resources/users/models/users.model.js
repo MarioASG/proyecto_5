@@ -1,5 +1,6 @@
 //Se define el modelo de mongoose
 import bcrypt from 'bcrypt'; //Se importa la librería con el fin de encriptar password
+import mongoose from 'mongoose';
 
 const SALT_WORK_FACTOR = 12;
 
@@ -43,4 +44,4 @@ userSchema.methods.validatePassword = async function validatePassword(data){
     return bcrypt.compare(data, this.password);
 }
 
-export const UserModel = new mongoose.model('User', userSchema)
+export const UserModel = new mongoose.model('User', userSchema);

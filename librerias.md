@@ -9,3 +9,4 @@ await-catcher
 nodemon
 jwt
 bcrypt
+cors

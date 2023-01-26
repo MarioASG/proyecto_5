@@ -1,5 +1,6 @@
 import * as dotenv from 'dotenv'
 
+//Acá se cargan las variables de entorno
 dotenv.config()
 
 export default {

@@ -9,7 +9,9 @@ export const createUser = async (body)=>{
 
 //Método para encontrar usuarios por email
 export const findUserByEmail = async (email)=>{
-    const userFound = await UserModel.findOne({email: email});
+    const userFound = await UserModel.findOne({
+        email: email
+    });
     return userFound;
 }
 

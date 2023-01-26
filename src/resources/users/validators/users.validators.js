@@ -1,5 +1,5 @@
 //Se crea el esquema de validación
-import joi from 'joi,';
+import joi from 'joi';
 
 
 //Validamos en el esquema si son 'STRINGS' y si son 'REQUIRED'
@@ -13,7 +13,7 @@ const createUserSchemaValidator = joi.object({
 
 //Se define el método para realizar la validación
 const validateCreateUserBody = async (body)=>{
-    return createUserSchemaValidator.vlidateAsync(body, {abordtEarly: false});
+    return createUserSchemaValidator.validateAsync(body, {abordtEarly: false});
 }
 
 //Se exporta
