@@ -10,3 +10,4 @@ nodemon
 jwt
 bcrypt
 cors
+mercadopago
