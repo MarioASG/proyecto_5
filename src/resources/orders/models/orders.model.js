@@ -1,4 +1,4 @@
-import mongoose, {SchemaTypes, trusted} from 'mongoose';
+import mongoose, {SchemaTypes} from 'mongoose';
 //Esquema de la orden de pago
 const orderSchema = new mongoose.Schema({
     user:{ //Usuario que paga
