@@ -1,6 +1,6 @@
 import {Router} from 'express';
-import { login } from '../controllers/auth.controller.js';
-import { signup } from '../controllers/auth.controller.js'
+import {login} from '../controllers/auth.controller.js';
+import {signup} from '../controllers/auth.controller.js'
 //Se define router
 const authRouter = Router();
 //Se define la base de la URI

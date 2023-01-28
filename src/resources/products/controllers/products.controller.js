@@ -10,7 +10,7 @@ export const createProduct = async (req, res)=>{
     if(validationError){
         console.log('error', validationError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: validationError.message
         }
         return res.status(400).json(errorResponse)
@@ -20,7 +20,7 @@ export const createProduct = async (req, res)=>{
     if(creationError){
         console.log('error', creationError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: creationError.message
         }
         return res.status(400).json(errorResponse)
@@ -36,7 +36,7 @@ export const getProducts = async (req, res)=>{
     if(getProductsError){
         console.log('error', getProductsError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: getProductsError.message
         }
         return res.status(400).json(errorResponse)
@@ -51,7 +51,7 @@ export const getProductById = async (req, res)=>{
     if(getProductError){
         console.log('error', getProductError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: getProductError.message
         }
         return res.json(product)
@@ -69,7 +69,7 @@ export const updateProductById = async (req, res)=>{
     if(updateError){
         console.log('error', updateError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: updateError.message
         }
         return res.status(400).json(errorResponse)
@@ -85,7 +85,7 @@ export const deleteProductById = async (req, res)=>{
     if(deleteError){
         console.log('error', deleteError);
         const errorResponse = {
-            status: 'FAILED',
+            status: 'ERROR',
             details: deleteError.message
         }
         return res.status(400).json(errorResponse)

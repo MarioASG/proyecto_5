@@ -3,8 +3,8 @@ import {UserModel} from '../models/users.model.js';
 
 //Método para crear usuarios
 export const createUser = async (body)=>{
-    const newProduct = await UserModel.create(body);
-    return newProduct;
+    const newUser = await UserModel.create(body);
+    return newUser;
 }
 
 //Método para encontrar usuarios por email

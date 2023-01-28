@@ -11,7 +11,7 @@ export const verifyToken = (req, res, next)=>{ //Petición - respuesta - next(ll
 //Si existe, se extrae la información del token
     if(!token) //Si no existe devuelve un 401
     return res.status(401).json({
-        status: 'FAILED',
+        status: 'ERROR',
         error: 'No se encuentra el token'
     })
     try{
@@ -22,13 +22,13 @@ export const verifyToken = (req, res, next)=>{ //Petición - respuesta - next(ll
     } catch(error){
         if (error instanceof jwt.TokenExpiredError){ //Error si el token expiró
             res.status(401).json({
-                status: 'FAILED',
+                status: 'ERROR',
                 error: 'Expiró el token'
             });
         }
         else if (error instanceof jwt.JsonWebTokenError){//Error si el token no es válido
             req.status(401).json({
-                status: 'FAILED',
+                status: 'ERROR',
                 error: 'El token no es válido'
             });
         };

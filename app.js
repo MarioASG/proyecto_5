@@ -20,7 +20,9 @@ app.use(cors());
 app.use(express.json());
 //Ruta endpoint por default
 app.get('/', function (req, res){
-    res.json({message: 'Tu send es correcto'});
+    res.json({
+        message: 'Tu send es correcto'
+    });
 });
 
 //Endpoint de auth

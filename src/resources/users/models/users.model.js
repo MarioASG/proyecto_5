@@ -23,7 +23,7 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     }
-})
+});
 
 
 //Se agrega un middleware que se ejecuta antes del save
@@ -37,7 +37,7 @@ userSchema.pre('save', async function (next){
     }catch (err){
         return next(err);
     }
-})
+});
 
 //Método que valida la constraseña, comparando si la constraseña(data) conincide con la guardada en DB
 userSchema.methods.validatePassword = async function validatePassword(data){
