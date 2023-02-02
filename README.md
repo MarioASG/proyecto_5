@@ -11,12 +11,12 @@ El backend está realizado con Node.js usando varias librerías, incluida expres
 La base de datos utilizada es MongoDB. Una persona puede registrarse en el sitio y quedará guaradada en la base de datos, pudiendo iniciar sesión y logrando comprar
 productos, llevando al portal de mercadoPago.
 
-Una página Home
-Página de registro
-Página de inicio de sesión
-Página de perfil (Ilustrativo, no contiene nada)
-Carrito de compras
-Conectado con MercadoPago
+- Una página Home
+- Página de registro
+- Página de inicio de sesión
+- Página de perfil (Ilustrativo, no contiene nada)
+- Carrito de compras
+- Conectado con MercadoPago
 
 ### Inicio
 
